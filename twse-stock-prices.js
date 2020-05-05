@@ -12,7 +12,7 @@ module.exports.getCurrentPrice = function (stocks, callback) {
 	request(baseUrl + query, function (err, res, body) {
 		if (err) { callback(err); }
 		try {
-			callback(null, body.msgArray);
+			callback(null, body);
 		} catch (err) {
 			callback(err)
 		}
