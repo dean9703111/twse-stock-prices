@@ -1,0 +1,31 @@
+{
+  "name": "twse-stock-prices",
+  "version": "1.0.0",
+  "description": "Node.js API to get stock prices from twse finance",
+  "main": "twse-stock-prices.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dean9703111/twse-stock-prices.git"
+  },
+  "keywords": [
+    "twse",
+    "stocks",
+    "stock",
+    "prices",
+    "ticker",
+    "investing"
+  ],
+  "author": "Dean",
+  "license": "MIT",
+  "homepage": "https://github.com/dean9703111/twse-stock-prices#readme"
+}
