@@ -8,11 +8,11 @@ module.exports.getCurrentPrice = function (stocks, callback) {
 	stocks.forEach(stock => query = query + 'tse_' + stock + '.tw|');
 	query = query.substring(0, query.lastIndexOf('|'));
 	query = query + '&json=1&delay=0&_=' + Date.now();;
-	console.log(baseUrl + query);
+	// console.log(baseUrl + query);
 	request(baseUrl + query, function (err, res, body) {
 		if (err) { callback(err); }
 		try {
-			callback(null, body);
+			callback(null, body.msgArray);
 		} catch (err) {
 			callback(err)
 		}
