@@ -1,6 +1,6 @@
 {
   "name": "twse-stock-prices",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js API to get stock prices from twse finance",
   "main": "twse-stock-prices.js",
   "directories": {
