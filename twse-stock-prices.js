@@ -9,11 +9,11 @@ module.exports.getCurrentPrice = function (stocks, callback) {
 	query = query.substring(0, query.lastIndexOf('|'));
 	query = query + '&json=1&delay=0&_=' + Date.now();;
 	// console.log(baseUrl + query);
-	
+
 	request(baseUrl + query, function (err, res, body) {
 		if (err) { callback(err); }
 		try {
-			callback(null, body);
+			callback(null, JSON.parse(body));
 		} catch (err) {
 			callback(err)
 		}
